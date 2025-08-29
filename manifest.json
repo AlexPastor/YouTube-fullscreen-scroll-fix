@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "YouTube Fullscreen Scroll Fix",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Adds back support on Youtube for scrolling when watching videos on fullscreen",
   "permissions": ["storage", "scripting"],
   "content_scripts": [
@@ -13,8 +13,10 @@
   ],
   "action": {
     "default_popup": "popup.html",
+    "default_title": "YouTube Fullscreen Scroll Fix",
     "default_icon": {
       "16": "icon.png",
+      "32": "icon.png", 
       "48": "icon.png",
       "128": "icon.png"
     }

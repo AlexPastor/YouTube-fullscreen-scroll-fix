@@ -1,86 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>YouTube Fullscreen Scroll</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Roboto, sans-serif;
-        background: #f9f9f9;
-        min-width: 220px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 160px;
-      }
 
-      .card {
-        background: white;
-        border-radius: 14px;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
-        padding: 20px;
-        text-align: center;
-        width: 90%;
-        max-width: 240px;
-      }
+<head>
+  <meta charset="utf-8" />
+  <title>YouTube Fullscreen Scroll Fix</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: #f9f9f9;
+      min-width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 180px;
+      padding: 0px 20px;
+    }
 
-      h1 {
-        font-size: 16px;
-        margin: 0 0 10px 0;
-        color: #202124;
-      }
+    h1 {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+      color: #202124;
+    }
 
-      button {
-        padding: 10px 16px;
-        border: none;
-        border-radius: 8px;
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.25s ease;
-        width: 100%;
-      }
+    button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      width: 100%;
+    }
 
-      button.on {
-        background: linear-gradient(135deg, #43a047, #2e7d32);
-        color: white;
-        box-shadow: 0 3px 10px rgba(46, 125, 50, 0.3);
-      }
+    button.on {
+      background: linear-gradient(135deg, #43a047, #2e7d32);
+      color: white;
+      box-shadow: 0 3px 10px rgba(46, 125, 50, 0.3);
+    }
 
-      button.off {
-        background: linear-gradient(135deg, #e53935, #c62828);
-        color: white;
-        box-shadow: 0 3px 10px rgba(198, 40, 40, 0.3);
-      }
+    button.off {
+      background: linear-gradient(135deg, #e53935, #c62828);
+      color: white;
+      box-shadow: 0 3px 10px rgba(198, 40, 40, 0.3);
+    }
 
-      button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-      }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
 
-      button:active {
-        transform: translateY(0);
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-      }
+    button:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
 
-	.warning {
-	  font-size: 12px;
-	  color: #d32f2f;           /* strong red */
-	  background: #fff3f3;      /* very light red background */
-	  padding: 4px 8px;
-	  border-radius: 6px;
-	  margin-top: 10px;
-	  text-align: center;
-	}
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <h1>YouTube Fullscreen Scroll</h1>
-      <button id="toggle" class="off">Loading...</button>
-      <div id="warning" class="warning">⚠️ Page will refresh to apply changes when toggling.</div>
-    </div>
-    <script src="popup.js"></script>
-  </body>
+    .warning {
+      font-size: 12px;
+      color: #d32f2f;
+      background: #fff3f3;
+      padding: 4px 8px;
+      border-radius: 6px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Status</h1>
+    <button id="toggle" class="off">Loading...</button>
+    <div id="warning" class="warning">⚠️ Page will refresh to apply changes when toggling</div>
+  </main>
+  <script src="popup.js"></script>
+</body>
+
 </html>
