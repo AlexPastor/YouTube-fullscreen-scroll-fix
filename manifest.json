@@ -3,7 +3,7 @@
   "name": "YouTube Fullscreen Scroll Fix",
   "version": "1.0.1",
   "description": "Adds back support on Youtube for scrolling when watching videos on fullscreen",
-  "permissions": ["storage", "scripting"],
+  "permissions": ["storage"],
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*"],
