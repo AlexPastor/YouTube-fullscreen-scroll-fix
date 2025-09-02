@@ -2,7 +2,10 @@
 
 A Chrome extension to fix scrolling issues on YouTube. This is an unpacked version, I'm working on uploading a packed version to the Chrome Web Store
 
-## Installation Guide
+## Chrome extension
+Link: https://chromewebstore.google.com/detail/eliegfbkcbckcgeoljkfdhamhnoldffi?utm_source=item-share-cb
+
+## Installation Guide - Dev mode required
 
 ### Step 1: Enable Developer Mode (Choose Your Browser)
 
